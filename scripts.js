@@ -13,3 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error fetching repositories:', error));
 });
+// Define the last updated date string
+const lastUpdatedDate = "01/03/2025";
+
+// Update the "Last Updated" sections in the HTML
+document.addEventListener("DOMContentLoaded", () => {
+    // Update the footer
+    const footerUpdate = document.querySelector("footer p");
+    if (footerUpdate) {
+        footerUpdate.textContent = `Last Updated - ${lastUpdatedDate}`;
+    }
+});
