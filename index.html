@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaiah Michael</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Isaiah Michael</h1>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/isaiahcmichael" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://isaiahcmichael.github.io/minecraftServers/" target="_blank">minecraftServers Page</a></li>
-            </ul>
+<html>
+    <head>
+        <title>Isaiah Michael</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Isaiah Michael</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><a href="https://github.com/isaiahcmichael">GitHub</a></li>
+                        <li class="navbar-item"><a href="https://github.com/isaiahcmichael/bibleJSON">The KJV in JSON</a></li>
+                        <li class="navbar-item"><a href="https://github.com/isaiahcmichael/Ollanect">Ollanect (Archive)</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Isaiah Michael, the developer of <a href="https://github.com/isaiahcmichael/Ollanect"> Ollanect</a>! Connect to your local Ollama models on Windows and Linux PCs!
-            </p>
-        </section>
-        <section id="repos">
-            <h2>Repositories</h2>
-            <ul id="repo-list"></ul>
-        </section>
-    </main>
-    <footer>
-        <p>Last Update - date</p>
-        <p>Isaiah Michael - Hosted on GitHub Pages</p>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 lb">
+                    <h1>Hello!</h1>
+                    <p>My name is Isaiah. I like computers. What do I like best about them? I don't know.</p>
+                </div>
+                <div class="col-12">
+                    <h1>My Programming List:</h1>
+                    <ul>
+                        <li>Python (see <a href="#ollanect">Ollanect</a>)</li>
+                        <li>Websites (HTML & CSS)</li>
+                    </ul>
+                </div>
+                <div class="col-12 lb">
+                    <h1>My Projects:</h1>
+                    <ul>
+                        <li>The King James Bible written in JSON (<a href="#biblejson">bibleJSON</a>)</li>
+                        <li><a href="#ollanect">Ollanect</a> (Archived)</li>
+                    </ul>
+                </div>
+                <div class="col-12" id="bibleJSON">
+                    <h1>bibleJSON</h1>
+                    <p>Throughout 2026, I saw the need for a new Bible app on my phone. Every one I tried had something I didn't like, such as full-screen ads. In October 2026, I finally decided to try this. "bibleJSON" is how I plan to store the Bible: In JSON format. I plan to enlist some help with this from a few friends, but when I'm close to being finished with this, I plan to wrap this in WebView on Android.</p>
+                    <a class="btn btn-dark" href="https://github.com/isaiahcmichael/bibleJSON">GitHub Page</a>
+                </div>
+                <div class="col-12 lb" id="ollanect">
+                    <h1>Ollanect</h1>
+                    <p>This was my first project I shared online. The concept was simple: A simple terminal application written in Python that can connect to my Ollama server. At the time, I used AI chatbots to help me code Ollanect. I tried to ensure most of the code was mine, but I had AI help me some. After some time, I abandoned Ollanect and didn't really post anything on my GitHub account until October 2026, about a year and a half since Ollanect's last commit. On October 11, 2026, I finally marked Ollanect as "Archived" on GitHub.</p>
+                    <a class="btn btn-dark" href="https://github.com/isaiahcmichael/Ollanect">GitHub Page</a>
+                    <a class="btn btn-dark" href="https://gitea.com/isaiahcmichael/Ollanect">Gitea Page</a>
+                    <a class="btn btn-dark" href="https://bitbucket.org/isaiahcmichael/ollanect/src/main/">BitBucket Page</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
